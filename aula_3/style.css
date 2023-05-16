@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.titulo_pagina {
+    background-color: rgb(110, 110, 110);
+    color: white;
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.titulo_receita {
+    color: white;
+    background-color: rgb(189, 187, 187);
+    font-size: 20px;
+    padding: 10px;
+}
+section div.conteiner_informacoes {
+    background-color: rgba(255, 166, 0, 0.726);
+    margin-bottom: 5px;
+}
+
+section div.conteiner_informacoes ul.informacoes {
+    display: flex;
+    justify-content: center;
+}
+
+section div.conteiner_informacoes ul.informacoes li {
+    padding: 0 20px;
+    list-style: none;
+}
