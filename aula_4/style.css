@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.child{
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    line-height: 200px;
+    border: 2px solid rgb(83, 83, 83);
+    display: flex;
+    justify-content: center;
+}
+
+
+.father{
+    display: flex;
+    /* flex-direction: line; */
+    flex-wrap: wrap;
+}
+
+.child2{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(77, 77, 77);
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+div.child.especial{
+    justify-content: center;
+    align-items: center;
+}
