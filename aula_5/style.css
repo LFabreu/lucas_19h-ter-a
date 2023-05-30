@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgba(255, 166, 0, 0.849);
+
+}
+
+section{
+    background-color: white;
+    margin: 50px;
+    border-radius: 50px;
+}
+
+header h1{
+    background-color: grey;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.ingredientes-foto{
+    display:flex;
+}
+
+
+.ingredientes{
+    width: 70%;
+    background-color: rgba(253, 177, 149, 0.377);
+}
+
+.imagem{
+    width: 30%;
+}
+
+.imagem img{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px ;
+    padding: 20px 0px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer a{
+    font-style: italic;
+    text-decoration: none;
+}
+
