@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
+    font-family: 'Dancing Script', cursive;
 }
 
 body{
@@ -20,13 +22,15 @@ header h1{
     background-color: grey;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 80px;
     padding: 10px;
     border-radius: 50px 50px 0px 0px;
+
 }
 
 .ingredientes-foto{
     display:flex;
+    background-color: rgb(253, 177, 149);
 }
 
 
@@ -37,33 +41,82 @@ header h1{
 
 .imagem{
     width: 30%;
+    overflow: hidden;
 }
 
 .imagem img{
     width: 100%;
+    transition: all 300ms ease-in-out;
+    height: 100%;
 }
 
 h2{
     text-align: center;
-    font-size: 30px ;
+    font-size: 50px ;
+    background-color: rgb(193, 193, 193);
     padding: 20px 0px;
 }
 
 footer{
     text-align: center;
+    font-size: 25px;
+    background-color: rgb(85, 85, 85);
+    border-radius: 0px 0px 50px 50px ;
 }
 
 footer a{
     font-style: italic;
     text-decoration: none;
+    padding: 40px;
+    font-size: 30px;
 }
 
 .receita-ingredientes{
-    padding: 100px;
-    font-size: 20px;
+    padding: 10px 100px;
+    font-size: 30px;
 }
 
 .preparo{
-    padding: 50px;
-    font-size: 20px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h1 a{
+    text-decoration: none;
+}
+
+h1 a:link{
+    color: black;
+}
+
+.imagem img:hover{
+    transform: rotate(10deg) scale(1.2);
+
+}
+
+footer a:hover{
+    font-size: 50px;
+}
+
+footer a:visited{
+    color: orange;
+}
+
+footer a:link{
+    color: yellow;
+}
+
+@media (max-width: 700px) {
+    body{
+        background-color: black ;
+    }
+    
 }
