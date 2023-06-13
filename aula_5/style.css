@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgba(255, 166, 0, 0.849);
+    background-color: rgba(255, 166, 0, 0.87);
 
 }
 
@@ -32,7 +32,7 @@ header h1{
 
 .ingredientes{
     width: 70%;
-    background-color: rgba(253, 177, 149, 0.377);
+    background-color: rgba(253, 177, 149, 0.329);
 }
 
 .imagem{
@@ -64,4 +64,16 @@ footer a{
 
 .preparo{
     padding: 50px;
+}
+
+@media(max-width: 450px) {
+    .imagem{
+    width: 0px;
+    }
+    .ingredientes{
+        width: 100%;
+    }
+    .receita-ingredientes ul{
+        
+    }
 }
