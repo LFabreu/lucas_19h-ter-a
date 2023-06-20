@@ -1,12 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
 
-/* font-family: 'Crimson Text', serif; */
-
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Poppins:ital@1&display=swap');
 
-/* font-family: 'Poppins', sans-serif; */
+:root{
+    --primary-color: #b71a1f;
+    --second-color: #FFF;
+    --third-color: #e9ab21;
+    --black: #000;
+    --gap: 3rem;
+}
 
-#b71a1f = vermelho (fundo)
-#e9ab21 = amarelo
-#FFF = branco
-#000 = preto
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2.5rem;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Crimson Text', serif;
+}
+
+h1{
+   text-transform: uppercase;
+   font-size: 6rem;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 5.5rem;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+h4{
+    text-transform: uppercase;
+    font-size: 4.5rem;
+}
+
+h5{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+h6{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: var(--gap);
+    text-align: justify;
+}
+
+/* primeira sessão */
+.bg-principal{
+    background-color: var(--primary-color);
+    color: var(--third-color);
+}
+
+.sessao {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner-principal{
+    max-width: 100rem;
+    margin: 0, auto;
+    padding: 10rem var(--gap);
+    display: flex;
+    flex-direction: row;
+}
+.conteudo-principal h1{
+    text-align: center;
+}
+
+img{
+    height: 40rem;
+    width: 50rem;
+    background-color: grey;
+
+}
+
+/* sessao secundaria */
+
+.bg-secundario{
+    background-color: var(--third-color);
+    color: var(--black);
+}
+
+.conteiner-principal2{
+    max-width: 100rem;
+    margin: 0, auto;
+    padding: 10rem var(--gap);
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-principal2 h2{
+    padding: 0 var(--gap);
+}
