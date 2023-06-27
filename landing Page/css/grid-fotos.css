@@ -1,0 +1,41 @@
+.grid-fotos-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0, auto;
+    min-width: 100rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.grid-fotos-titulo{
+    padding-left: 3rem;
+    padding-top: 8rem;
+    font-size: 8rem;
+}
+
+.grid-fotos-subtitulo{
+    font-style: italic;
+
+}
+
+.grade-de-fotos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.conteiner-img{
+
+}
+
+.conteiner-img img{
+
+}
+
+.conteiner-img .img-info{
+
+}
+
+.conteiner-img .img-info p{
+
+}

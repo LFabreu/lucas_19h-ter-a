@@ -1,0 +1,45 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    counter-reset: grid-counter;
+}
+
+.grid h3{
+    padding-left: 8rem;
+    position: relative;
+}
+
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    left: -0.001rem;
+    top: -2rem;
+    font-size: 8rem;
+    transform: rotate(10deg);
+    font-style: italic;
+}
+
+.top3-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0, auto;
+    max-width: 100rem;
+    padding-top: 8rem;
+}
+
+.titulo-top3{
+    padding-left: 3rem;
+    font-size: 10rem;
+    padding-bottom: 1rem;
+}
+
+.top3-subtitulo{
+    margin-top: -0.5rem;
+    padding-bottom: 3rem;
+    font-style: italic;
+}
+
