@@ -95,7 +95,10 @@ img{
     height: 40rem;
     width: 50rem;
     background-color: grey;
+}
 
+.conteiner-img{
+    justify-content: right;
 }
 
 /* sessao secundaria */
@@ -116,3 +119,4 @@ img{
 .conteiner-principal2 h2{
     padding: 0 var(--gap);
 }
+
