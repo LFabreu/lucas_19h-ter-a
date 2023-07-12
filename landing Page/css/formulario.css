@@ -1,0 +1,25 @@
+.formulario-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100rem;
+    margin: 0 auto;
+}
+
+.formulario-cabecalho h2{
+    font-size: 8rem;
+}
+
+.formulario-cabecalho p {
+    margin-top: -0.5rem;
+}
+
+.formulario-conteudo{
+    width: 100%;
+}
+
+.formulario-conteudo fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
