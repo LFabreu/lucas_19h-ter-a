@@ -19,6 +19,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -94,7 +95,6 @@ p{
 img{
     height: 40rem;
     width: 50rem;
-    background-color: grey;
     margin-left: var(--gap);
     margin-top: var(--gap);
 }

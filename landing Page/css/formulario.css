@@ -20,6 +20,61 @@
 
 .formulario-conteudo fieldset{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; */
+    grid-template-areas: 
+    'header header'
+    'nome sobrenome'
+    'email mensagem'
+    'botao botao';
+}
+
+.formulario-conteudo fieldset .cabecalho{
+    font-style: italic;
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.formulario-elementos{
+    padding: 2rem;
+}
+
+.formulario-elementos label{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.formulario-elementos input, .formulario-elementos textarea{
+    border: none;
+    padding: 1.5rem, 2rem;
+    font-size: 2rem;
+    outline: none;
+}
+
+.formulario-elementos input:focus, .formulario-elementos textarea:focus{
+    box-shadow: 0 0 1rem 0.2rem yellow;
+}
+
+.formulario-elementos input::placeholder, .formulario-elementos textarea::placeholder{
+padding-left: 2rem;
+}
+
+.formulario-elementos button{
+    border: 0.25rem solid grey;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.formulario-elementos button:hover{
+    border: 0.25rem solid rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 1rem 0.2rem rgb(255, 251, 0);
 }
