@@ -1,0 +1,46 @@
+@media (max-width: 700px){
+    .grade-de-fotos{
+        grid-template-columns: 1fr;
+    }
+
+    .conteiner-img img{
+        width: 100%;
+    }
+    .conteiner-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .menu{
+        bottom: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .menu-conteudo, .menu-conteudo ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-conteudo{
+        height: 100vh;
+    }
+
+    .close-menu-label::after{
+        content: 'X';
+        position: fixed;
+        z-index: 99;
+        right: 3rem;
+        top: 2rem;
+        padding: 0.5rem;
+        background: white;
+        font-size: 3rem;
+        cursor: pointer;
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        line-height: 4rem;
+        
+    }
+}

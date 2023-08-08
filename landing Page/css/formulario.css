@@ -29,6 +29,38 @@
     'botao botao';
 }
 
+.item1{
+    grid-area: header;
+}
+
+.item2{
+    grid-area: nome;
+}
+
+.item3{
+    grid-area: sobrenome;
+}
+
+.item4{
+    grid-area: email;
+}
+
+.item5{
+    grid-area: mensagem;
+}
+
+.item6{
+    grid-area: botão;
+}
+
+.textarea{
+    resize: none;
+}
+
+.sobrenome {
+    width: 300.83px;
+}
+
 .formulario-conteudo fieldset .cabecalho{
     font-style: italic;
     font-size: 3rem;
