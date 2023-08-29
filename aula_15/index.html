@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_15</title>
+    <style>
+        .area {
+            background-color: blue;
+            height: 10rem;
+            width: 10rem;
+            text-align: center;
+            font-style: italic;
+            color: white;
+            line-height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="area" id="area">
+        <strong>
+            Qualquer coisa...
+        </strong>
+    </div>
+
+    <script>
+        const corpos = document.getElementsByTagName('body')
+        var elemento = document.getElementById('area')
+        var corpo = corpos[0]
+
+        elemento.addEventListener('click', clicar)
+
+        function clicar() {
+            elemento.innerHTML = 'clicou!'
+            elemento.style.background = 'green'
+        }
+
+        elemento.addEventListener('mouseenter', mouse)
+
+        function mouse() {  
+            elemento.innerHTML = 'Mouse está no quadrado'
+            corpo.style.background = 'black'
+        }
+
+        elemento.addEventListener('mouseout', mouseS)
+
+        function mouseS() {
+            elemento.innerHTML = 'Mouse saiu do quadrado'
+            corpo.style.background = 'white'
+            elemento.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>
