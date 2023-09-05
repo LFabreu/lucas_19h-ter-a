@@ -8,40 +8,51 @@
 </head>
 <body id="body">
     <header>
-        <h1>
+        <h1 id="horario2">
             Hora do Dia
         </h1>
     </header>
     <section id="fundo">
-        <div id="mensagem" class="mensagem">
+        <div id="msg" class="mensagem">
             Aqui ira aparecer sua mensagem
         </div>
-        <div id="foto">
-            <img src="https://www.pousadavaledelsol.com.br/blog/wp-content/uploads/2022/01/sol-2.jpg" alt="">
+        <div>
+            <img src="https://www.pousadavaledelsol.com.br/blog/wp-content/uploads/2022/01/sol-2.jpg" alt="" id="foto">
         </div>
     </section>
     <footer>
         🚀 CTRL+PLAY 🚀
     </footer>
 
-    <script src="script.js">
+    <script>
         function horario(){
+            var msg = document.getElementById('msg')
+            var data = new Date();
+            var hora = data.getHours();
+            var img = document.getElementById('foto')
+            var horas = document.getElementById('horario2')
             
-            var numero=prompt("digite a hora local").int;
+            var numero = prompt("digite a hora local");
 
             var x = parseInt(numero);
             
-            if(x > 12){
-                document.getElementById('fundo').innerHTML = numero;
-                document.getElementById('fundo').style.backgroundColor = 'black';
+            if(x >= 5 && x < 11){
+                document.getElementById('fundo').style.backgroundColor = 'white';
+                msg.innerHTML = 'Bom Dia!!!'
+                img.src = './img/dia.jpg'
+            }else if (x > 12 && x <= 18){
+                document.getElementById('fundo').style.backgroundColor = 'red';
+                msg.innerHTML = 'Boa Tarde!!!'
             }else{
-                document.getElementById('fundo').innerHTML = numero;
-                document.getElementById('fundo').style.Color = 'white';
+                document.getElementById('fundo').style.backgroundColor = 'grey';
+                msg.innerHTML = 'Boa Noite!!!'
+                img.src = './img/noite.jpg'
             }
-            
+        
+            horas.innerText = `Agora são ${numero} horas`
         }
         
-
+        horario();
     </script>
 </body>
 </html>
