@@ -6,13 +6,13 @@
     <title>hora de hoje</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <header>
         <h1>
             Hora do Dia
         </h1>
     </header>
-    <section>
+    <section id="fundo">
         <div id="mensagem" class="mensagem">
             Aqui ira aparecer sua mensagem
         </div>
@@ -25,6 +25,22 @@
     </footer>
 
     <script src="script.js">
+        function horario(){
+            
+            var numero=prompt("digite a hora local").int;
+
+            var x = parseInt(numero);
+            
+            if(x > 12){
+                document.getElementById('fundo').innerHTML = numero;
+                document.getElementById('fundo').style.backgroundColor = 'black';
+            }else{
+                document.getElementById('fundo').innerHTML = numero;
+                document.getElementById('fundo').style.Color = 'white';
+            }
+            
+        }
+        
 
     </script>
 </body>
