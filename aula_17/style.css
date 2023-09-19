@@ -19,7 +19,7 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 5px black  ;
-    height: 50%;
+    height: 60%;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -66,4 +66,23 @@ button:hover {
 
 button:focus {
     background-color: cyan;
+}
+
+.reset {
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    background-color: blue;
+    border: none;
+    font-size: 20px;
+    height: 20%;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.reset_h1 {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

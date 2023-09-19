@@ -5,7 +5,7 @@ const QUESTOES_QUIZ = [
         b: 'maçã',
         c: 'morango',
         d: 'uva',
-        correta: 'C',
+        correta: 'c',
     },
     {
         questao: "Melhor escola de programação",
@@ -31,7 +31,7 @@ const alternativa_b = document.getElementById("text_b")
 const alternativa_c = document.getElementById("text_c")
 const alternativa_d = document.getElementById("text_d")
 const botao = document.getElementById("enviar")
-const resposta = document.getElementById("resposta")
+const respostas = document.querySelectorAll(".resposta")
 const quiz_conteiner = document.getElementById("quiz")
 
 let questao_atual = 0
@@ -40,6 +40,7 @@ let corretas = 0
 carregar_quiz();
 
 function carregar_quiz() {
+    desmarcar_respostas()
     const info_questao = QUESTOES_QUIZ[questao_atual]
 
     quiz_titulo.innerText = info_questao.questao
@@ -66,10 +67,29 @@ botao.addEventListener("click", () => {
         }
         else
         {
-            quiz_conteiner.innerHTML = `<h1>Você acertou ${corretas}/${total_perguntas} questões </h1>`
+            quiz_conteiner.innerHTML = `<h1 class="reset_h1">Você acertou ${corretas}/${total_perguntas} questões </h1>
+            <button class="reset" onclick='location.reload()'>RESETAR</button>`
         }
     
     
     }
     
 })
+
+function pegar_resposta() {
+    let resp = undefined;
+
+    respostas.forEach((resp_elemento) => {
+        if (resp_elemento.checked) {
+            resp = resp_elemento.id;
+            console.log(resp)
+        }
+    } )
+    return resp
+}
+
+function desmarcar_respostas() {
+    respostas.forEach((resp_elemento) => {
+        resp_elemento.checked = false
+    })
+}
