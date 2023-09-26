@@ -1,30 +1,31 @@
-var nota1=prompt("digite a Nota n°1");
-var nota2=prompt("digite a Nota n°2");
-var nota3=prompt("digite a Nota n°3");
-var nome1=prompt("digite o seu nome");
+var n1=parseInt(prompt("digite a 1ª Nota "));
+var n2=parseInt(prompt("digite a 2ª Nota "));
+var n3=parseInt(prompt("digite a 3ª Nota "));
 
-document.etElementById("nome")
-document.getElementById("média");
-document.getElementById("resultado");
+let soma = n1 + n2 + n3
+let resp = soma / 3
 
+const nome = document.getElementById("nome")
+const média = document.getElementById("nota");
+const result = document.getElementById("resultado");
 
-function calcular(){
-    return resp
-}
-
-function Passou(resultado) {
-    soma = nota1 + nota2 + nota3
-
-    resp = soma/3
-
-    if resp > 5{
-        resultado.innerText("passou")
+function Passou() {
+    if (resp >= 5) {
+        result.innerHTMl = 'aprovado'   
+        
     }
-    if resp < 5{
-        resultado.innerText("Reprovou")
+    else if (resp <= 4) {
+        result.innerText = "Reprovou"
     }
 }
+média.innerHTML = resp
 
-function nome(){
-    nome.innerText(nome1)
+
+
+function mudar(){
+    nome.innerHTML = prompt("digite o seu nome")
 }
+
+Passou()
+
+mudar();
