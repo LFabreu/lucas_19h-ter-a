@@ -1,28 +1,34 @@
-const n1 = document.getElementById("n1");
-const n2 = document.getElementById("n2");
-const n3 = document.getElementById("n3");
+const média_txt = document.getElementById("nota");
+const nome_txt = document.getElementById("nome")
+const resultado_txt = document.getElementById("resultado");
 
-let soma = n1 + n2 + n3
-let resp = soma/3
+function calcular_media() {
+    n1 = localStorage.getItem("n1")
+    n2 = localStorage.getItem("n2")
+    n3 = localStorage.getItem("n3")
 
-const nome = document.getElementById("nome")
-const média = document.getElementById("nota");
-const result = document.getElementById("resultado");
-
-function Passou() {
-    if (resp >= 5) {
-        result.innerHTMl = 'aprovado'   
-        
+    let soma = n1 + n2 + n3
+    let media = soma/3
+    
+    
+    if (media >= 5) {
+    result.innerHTMl = 'aprovado'   
+    
     }
-    else if (resp <= 4) {
+    else if (media <= 4) {
         result.innerText = "Reprovou"
     }
+    else{
+        result.innerHTML = 'Recuperação'
+    }
+    média_txt.innerHTML = media
 }
-média.innerHTML = resp
 
-function mudar(){
-    nome.innerHTML = nome
-}
+
+
+// function mudar(){
+//     nome_txt.innerHTML = nome
+// }
 
 Passou()
 

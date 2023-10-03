@@ -14,3 +14,42 @@ body {
     align-items: center;
     background-image: linear-gradient(90deg, blue, black) ;
 }
+main {
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px black  ;
+    height: 60%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, cyan, purple);
+}
+
+input {
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    justify-content: end;
+    border: none    ;
+}
+
+label {
+    align-items: initial;
+    justify-content: initial;
+}
+
+div {
+    padding-top: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
