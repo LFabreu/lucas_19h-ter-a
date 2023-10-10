@@ -17,17 +17,18 @@ function pegar_valores() {
     const n2 = n2_input.value
     const n3 = n3_input.value
 
-    if (nome === "") {
-        erro_campo(nome_input, "O nome do aluno é obrigatório")
-    }
-    else {
-        sucesso_campo(nome_input)
-    }
+    // if (nome === "") {
+    //     erro_campo(nome_input, "O nome do aluno é obrigatório")
+    // }
+    // else {
+    //     sucesso_campo(nome_input)
+    // }
 
     localStorage.setItem("nome", nome)
     localStorage.setItem("n1", n1)
     localStorage.setItem("n2", n2)
     localStorage.setItem("n3", n3)
+    window.location.pathname="./aula_19/resultado.html"
 }
 
 function erro_campo(elemento, mensagem){
@@ -37,3 +38,4 @@ function erro_campo(elemento, mensagem){
     small.innerText = mensagem
     formControl.className = "form-control erro"
 }
+
