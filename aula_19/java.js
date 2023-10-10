@@ -1,38 +1,17 @@
-const média_txt = document.getElementById("nota");
-const nome_txt = document.getElementById("nome")
-const resultado_txt = document.getElementById("resultado");
+const senha_elemento = document.getElementById("senha");
+const copiar_elemento = document.getElementById("copiar");
+const tamanho_elemento = document.getElementById("tamanho");
+const maiusculas_elemento = document.getElementById("maiusculas");
+const minusculas_elemento = document.getElementById("minusculas");
+const numeros_elemento = document.getElementById("numeros");
+const caracteres_elemento = document.getElementById("caracteres-especias");
+const gerar_senha_elemento = document.getElementById("gerar-senha");
 
-function calcular_media() {
-    n1 = parseInt(localStorage.getItem("n1"))
-    n2 = parseInt(localStorage.getItem("n2"))
-    n3 = parseInt(localStorage.getItem("n3"))
+const maiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+const minusculas = 'abcdefghijklmnopqrstuvwxyz'
+const numeros = '0123456789'
+const caracteres = '!@#$%¨&*_=+?/.,;<>()ç|'
 
-    let soma = n1 + n2 + n3
-    let media = soma/3
-    
-    
-    if (media >= 5) {
-        resultado_txt.innerHTMl = 'aprovado'   
-    
-    }
-    else if (media <= 4) {
-        resultado_txt.innerText = "Reprovou"
-    }
-    else{
-        resultado_txt.innerHTML = 'Recuperação'
-    }
-    média_txt.innerHTML = media
+function gerar_senha() {
+    let tamanho_senha = tamanho_elemento.value
 }
-
-function nome() {
-    aluno = localStorage.getItem("nome")
-    nome_txt.innerHTML = aluno
-}
-
-nome()
-
-// function mudar(){
-//     nome_txt.innerHTML = nome
-// }
-
-calcular_media()

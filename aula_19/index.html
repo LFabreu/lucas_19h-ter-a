@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>\Aula</title>
-    <link rel="stylesheet" href="fundo.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <form action="resultado.html" id="formulario">
-            <div id="cadastro-notas">
-                <h1>
-                    CADASTRO DE NOTAS
-                </h1>
-                
+    <div class="conteiner-gerador-senha">
+        <div class="head-gerador-senha">
+            <div class="senha">
+                <span id="senha">
+                    
+                </span>
+                <button id="copiar">copiar</button>
             </div>
-            <div>
-                <label for="nome_input">Nome</label>
-                <input id="nome_input" type="text" placeholder="digite o seu nome">
+        </div>
+        <div class="body-gerador-senha">
+            <div class="form">                
+                <label for="tamanho">Tamanho da senha</label>
+                <input type="number" id="tamanho" min="6" max="18">
             </div>
-            <div>
-                <label for="n1_input">1° nota</label>
-                <input id="n1_input" type="number" placeholder="digite a sua 1ª nota" max="10" min="0">
+            <div class="form">
+                <label for="maiusculas">Letras maiusculas</label>
+                <input type="checkbox" id="maiusculas">
             </div>
-            <div>
-                <label for="n2_input">2° nota</label>
-                <input id="n2_input" type="number" placeholder="digite a sua 2ª nota" max="10" min="0">
+            <div class="form">
+                <label for="minusculas">Letras minusculas</label>
+                <input type="checkbox" id="minusculas">
             </div>
-            <div>
-                <label for="n3_input">3° nota</label>
-                <input id="n3_input" type="number" placeholder="digite a sua 3ª nota" max="10" min="0">
+            <div class="form">
+                <label for="numeros">numeros</label>
+                <input type="checkbox" id="numeros">
             </div>
-            <button type="submit">calcular</button>
-        </form>
-    </main>
-    <script src="script_form.js"></script>
+            <div class="form">
+                <label for="caracteres-especiais">caracteres-especiais</label>
+                <input type="checkbox" id="caracteres-especiais">
+            </div>
+            <button type="button" class="gerar-senha" id="gerar-senha " >
+                Gerar senha
+            </button>
+        </div>
+    </div>
+    <script src="java.js"></script>
 </body>
 </html>

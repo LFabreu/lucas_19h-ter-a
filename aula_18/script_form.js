@@ -28,7 +28,7 @@ function pegar_valores() {
     localStorage.setItem("n1", n1)
     localStorage.setItem("n2", n2)
     localStorage.setItem("n3", n3)
-    window.location.pathname="./aula_19/resultado.html"
+    window.location.pathname="./aula_18/resultado.html"
 }
 
 function erro_campo(elemento, mensagem){

@@ -3,38 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>\Aula</title>
+    <link rel="stylesheet" href="fundo.css">
 </head>
 <body>
     <main>
-        <h1>Boletim</h1>
-        
-        <div id="conteiner-informações">
-            <label class="nome">
-                Nome: 
-            </label>
-            <span id="nome" class="nome">
-                Lucas
-            </span>
-        </div>
-        <div>
-            <label id="media" class="media">
-                Média:  
-                </ç>
-                <span id="nota" class="media">
-                    10
-                </span>
+        <form action="resultado.html" id="formulario">
+            <div id="cadastro-notas">
+                <h1>
+                    CADASTRO DE NOTAS
+                </h1>
+                
             </div>
             <div>
-                <label class="resultado">
-                    Resultado:
-                </label>
-                <span id="resultado" class="resultado">
-                    aprovado
-                </span>
+                <label for="nome_input">Nome</label>
+                <input id="nome_input" type="text" placeholder="digite o seu nome">
             </div>
-        </main>
-        <script src="script.js"></script>
-    </body>
-    </html>
+            <div>
+                <label for="n1_input">1° nota</label>
+                <input id="n1_input" type="number" placeholder="digite a sua 1ª nota" max="10" min="0">
+            </div>
+            <div>
+                <label for="n2_input">2° nota</label>
+                <input id="n2_input" type="number" placeholder="digite a sua 2ª nota" max="10" min="0">
+            </div>
+            <div>
+                <label for="n3_input">3° nota</label>
+                <input id="n3_input" type="number" placeholder="digite a sua 3ª nota" max="10" min="0">
+            </div>
+            <button type="submit">calcular</button>
+        </form>
+    </main>
+    <script src="script_form.js"></script>
+</body>
+</html>

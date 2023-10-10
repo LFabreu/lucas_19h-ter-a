@@ -8,21 +8,72 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
+    background-color: rgb(2, 2, 77);
+    color: rgb(249, 253, 4);
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(90deg, blue, black) ;
+    width: 100vw;
+    height: 100vh;
 }
 
-main {
-    background-color: white;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px 5px black  ;
-    height: 60%;
+.conteiner-gerador-senha {
+    background-color: rgb(38, 38, 107);
     width: 30%;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(90deg, cyan, purple);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px rgb(4, 255, 159);
 }
+
+.head-gerador-senha {
+    padding: 20px;
+}
+
+.senha {
+    background-color: rgb(18, 18, 70);
+    border-radius: 5px;
+    justify-content: space-between;
+    display: flex;
+    font-size: 20px;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.senha span {
+    color: white;
+}
+
+.senha button {
+    border-radius: 5px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+    opacity: 0;
+    border: none;
+}
+
+.senha:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.body-gerador-senha {
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.gerar-senha {
+    background: #d4d114;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+}
+
