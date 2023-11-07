@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: rgb(155, 9, 240);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.pesquisa {
+    background-color: black;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1.5px solid yellow;
+    font-family: inherit;
+    font-size: 14px;
+    color: blueviolet;
+    padding-left: 10px ;
+
+}
+
+.pesquisa::placeholder {
+    color: rgb(141, 11, 216);
+}
+
+.pesquisa:focus {
+    outline: none;
+    background-color: rgba(37, 8, 46, 0.856);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filme {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px 10px;
+    margin: 20px;
+    background-color: blueviolet;
+}
+
+.filme img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.filme .filme-info {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    letter-spacing: 1px;
+    align-items: center;
+    height: 100px;
+}
+
+.filme .filme-info span {
+    border-radius: 10px;
+    background-color: rgb(49, 2, 97);
+    padding: 2.5px 5px;
+}
+
+.filme .filme-info span.green {
+    color: rgb(1, 199, 1);
+}
+
+.filme .filme-info span.red {
+    color: red;
+}
+
+.filme .filme-info span.yellow{
+    color: yellow;
+}
